@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.EntityFramework
         //Veritabanına bağlantı sağladım. Veritabanı adı Hospital
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB; Database=Hospital; Trusted_Connection=false; uid=sa; password=1234qwe;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-JFG6RPD\SQLEXPRESS; Database=Hospital; Trusted_Connection=true;");
         }
 
         //Burada ise tabloların eşleştirmesini yaptım.
