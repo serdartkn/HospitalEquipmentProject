@@ -32,7 +32,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  UnitPrice = e.UnitPrice,
                                  UnitsInStock = e.UnitsInStock,
                                  UsageRate = e.UsageRate
-                             };
+                             };     
 
                 return filter == null ? result.ToList() : result.Where(filter).ToList();
             }
